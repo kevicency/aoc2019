@@ -1,4 +1,6 @@
 module Program =
+  open System.Reflection
+
   [<EntryPoint>]
   let main _ =
     printfn "Advent of Code 2019"

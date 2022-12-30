@@ -7,8 +7,10 @@ module Runner =
   open System.Diagnostics
   open System.Reflection
   open System.IO
+  open Automation
 
   module private Internals =
+    let year = AppDomain.CurrentDomain.FriendlyName.Replace("aoc", "") |> int
     let maxDay = 25
     let maxPart = 2
 
@@ -86,15 +88,12 @@ module Runner =
     let runPart (part: Part) =
       printfn $"\nDay {part.Day}, Part {part.Part}"
 
+      let input = ensureInput year part.Day
+
       runExamples (part.Run, part.Ex)
 
-      let inputPath =
-        Path.Join(AppDomain.CurrentDomain.BaseDirectory, $"./input/Day%02d{part.Day}.txt")
-
-      let lines = File.ReadAllLines(inputPath)
-
       let stopwatch = Stopwatch.StartNew()
-      let result = part.Run.Invoke(lines)
+      let result = part.Run.Invoke(input)
       printfn $"Result:\t{result}\t({stopwatch.Elapsed.TotalMilliseconds}ms)"
 
     let runDay (day: Day) =
