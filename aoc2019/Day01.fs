@@ -1,12 +1,8 @@
 module Day01
 
-type internal Day =
-  interface
-  end
-
 open System
 open Xunit
-open AoC.Common.Input
+open AoC.Common.Prelude
 
 let parseInts = Array.map (fun (x: string) -> int x)
 
@@ -54,13 +50,3 @@ let ``p2 examples`` (input: String) expected =
   if input <> "" then
     let result = p2 (splitlines input)
     Assert.Equal(expected, result)
-
-[<Fact>]
-let ``p1 result`` () =
-  let result = p1 (get (typeof<Day>))
-  printfn "Day01 p1: %d" result
-
-[<Fact>]
-let ``p2 result`` () =
-  let result = p2 (get (typeof<Day>))
-  printfn "Day01 p2: %d" result

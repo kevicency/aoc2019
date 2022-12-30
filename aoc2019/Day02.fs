@@ -6,10 +6,7 @@ type internal Day =
 
 open System
 open Xunit
-open AoC.Common.Input
-
-let split (sep: string) (str: string) =
-  str.Split([| sep |], StringSplitOptions.RemoveEmptyEntries)
+open AoC.Common.Prelude
 
 let parseRegister (input: string[]) =
   input |> Seq.collect (split ",") |> Seq.map int |> Seq.toArray

@@ -1,13 +1,13 @@
 namespace AoC.Common
 
-open Microsoft.FSharp.Core
 
 module Runner =
   open System
   open System.Diagnostics
   open System.Reflection
-  open System.IO
+  open Microsoft.FSharp.Core
   open Automation
+  open Prelude
 
   module private Internals =
     let year = AppDomain.CurrentDomain.FriendlyName.Replace("aoc", "") |> int
@@ -76,7 +76,7 @@ module Runner =
 
         if input <> "" then
           let expected = args[ 1 ].ToString()
-          let lines = Input.splitlines input
+          let lines = splitlines input
           let result = run.Invoke(lines)
 
           if result <> expected then
