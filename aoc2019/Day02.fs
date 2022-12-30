@@ -54,6 +54,7 @@ let p2 (input: String[]) =
     |> intcode 0
     |> fun result ->
          if result = 19690720 then 100 * noun + verb
+         else if noun = 99 && verb = 99 then 0
          else if noun = 99 then bruteforce 0 (verb + 1)
          else bruteforce (noun + 1) verb
 
@@ -65,7 +66,8 @@ let p2 (input: String[]) =
 let p1ex () : obj[] list =
   [ [| @"1,9,10,3,2,3,11,0,99,30,40,50"; 3500 |] ]
 
-let p2ex () : obj[] list = [ [| @""; 0 |] ]
+let p2ex () : obj[] list =
+  [ [| @"1,9,10,3,2,3,11,0,99,30,40,50"; 0 |] ]
 
 [<Theory>]
 [<MemberData(nameof p1ex)>]

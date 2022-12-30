@@ -93,8 +93,14 @@ module Runner =
       runExamples (part.Run, part.Ex)
 
       let stopwatch = Stopwatch.StartNew()
-      let result = part.Run.Invoke(input)
-      printfn $"Result:\t{result}\t({stopwatch.Elapsed.TotalMilliseconds}ms)"
+      let answer = part.Run.Invoke(input)
+      let time = stopwatch.Elapsed.TotalMilliseconds
+      stopwatch.Stop()
+      printfn $"Answer:\t{answer}\t({time}ms)"
+
+      if answer <> "" then
+        submit part.Day part.Part (answer, time)
+
 
     let runDay (day: Day) =
       // day.Prewarm |> Option.iter (runPrewarm day.Day)

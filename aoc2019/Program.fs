@@ -6,4 +6,5 @@ module Program =
     printfn "Advent of Code 2019"
     printfn "----------------------------------------------------------------"
     AoC.Common.Runner.runLatest ()
+    printfn "\n----------------------------------------------------------------"
     0

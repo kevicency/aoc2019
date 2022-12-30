@@ -1,16 +1,19 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <UserSecretsId>5e2624a9-8850-4f3c-807c-14c4fd6b532b</UserSecretsId>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Env.fs" />
+    <Compile Include="Submissions.fs" />
     <Compile Include="Automation.fs" />
     <Compile Include="Input.fs" />
     <Compile Include="Option.fs" />
     <Compile Include="Runner.fs" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="FSharp.Json" Version="0.4.1" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="7.0.0" />
   </ItemGroup>
