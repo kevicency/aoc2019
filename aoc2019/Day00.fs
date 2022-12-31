@@ -25,3 +25,4 @@ let ``p1 examples`` (input: String) expected =
 let ``p2 examples`` (input: String) expected =
   if input <> "" then
     let result = p2 (splitlines input)
+    Assert.Equal(expected, result)

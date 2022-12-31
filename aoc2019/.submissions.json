@@ -34,5 +34,17 @@
     "Solution": "21196",
     "Attempts": [],
     "Time": 15823.4063
+  },
+  "Day04/1": {
+    "Solved": true,
+    "Solution": "1330",
+    "Attempts": [],
+    "Time": 259.3108
+  },
+  "Day04/2": {
+    "Solved": true,
+    "Solution": "876",
+    "Attempts": [],
+    "Time": 250.4076
   }
 }

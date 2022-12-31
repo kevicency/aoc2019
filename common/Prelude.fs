@@ -15,6 +15,9 @@ module Prelude =
     |> Array.map (fun (x: String) -> x.Trim())
     |> Array.filter (fun (x: String) -> x <> "")
 
+  let asString (chars: seq<char>) = String(Seq.toArray chars)
+
+
   let manhattan (x1, y1) (x2, y2) = abs (x1 - x2) + abs (y1 - y2)
 
   type Direction =
