@@ -15,7 +15,7 @@ module Automation =
       failwith "AOC_SESSION_TOKEN not found in user secrets"
 
     client.DefaultRequestHeaders.Add("Cookie", $"session={Env.SessionToken}")
-    client.DefaultRequestHeaders.UserAgent.ParseAdd(".NET (+via https://github.com/kmees/aoc.fs by kev.mees@gmail.com)")
+    client.DefaultRequestHeaders.UserAgent.ParseAdd(".NET (+via https://github.com/kmees/aoc2019 by kev.mees@gmail.com)")
     client.BaseAddress <- Uri "https://adventofcode.com"
     client
 
