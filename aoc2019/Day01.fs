@@ -2,7 +2,7 @@ module Day01
 
 open System
 open Xunit
-open AoC.Common.Prelude
+open AoC.Toolbelt.Prelude
 
 let parseInts = Array.map (fun (x: string) -> int x)
 

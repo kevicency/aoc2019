@@ -8,7 +8,6 @@
     <Compile Include="Env.fs" />
     <Compile Include="Submissions.fs" />
     <Compile Include="Automation.fs" />
-    <Compile Include="Prelude.fs" />
     <Compile Include="Option.fs" />
     <Compile Include="Runner.fs" />
   </ItemGroup>

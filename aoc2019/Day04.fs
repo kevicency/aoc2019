@@ -2,7 +2,7 @@ module Day04
 
 open System
 open Xunit
-open AoC.Common.Prelude
+open AoC.Toolbelt.Prelude
 
 let parseMinMax (input: String[]) =
   let minMax = input |> Seq.head |> split "-" |> Array.map int

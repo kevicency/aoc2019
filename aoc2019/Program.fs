@@ -10,7 +10,6 @@ module Program =
   let main args =
     printfn "Advent of Code 2019"
     printfn "----------------------------------------------------------------"
-    printfn "Arguments passed to function : %A" args
 
     match args[0] with
     | Int i -> AoC.Common.Runner.runDay i

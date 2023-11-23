@@ -6,7 +6,7 @@ type internal Day =
 
 open System
 open Xunit
-open AoC.Common.Prelude
+open AoC.Toolbelt.Prelude
 
 let parseLines =
   split ","

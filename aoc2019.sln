@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# 
+#
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "aoc2019", "aoc2019\aoc2019.fsproj", "{43EB7420-6C72-4D94-89A1-EBA8C0C4BEEE}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "common", "common\common.fsproj", "{6A6C1B61-831D-466A-89AF-6B98138B4E87}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "toolbelt", "toolbelt\toolbelt.fsproj", "{73266BE7-B72B-49D1-BD7F-21BA3E9CEBA5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,5 +25,9 @@ Global
 		{6A6C1B61-831D-466A-89AF-6B98138B4E87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A6C1B61-831D-466A-89AF-6B98138B4E87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A6C1B61-831D-466A-89AF-6B98138B4E87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73266BE7-B72B-49D1-BD7F-21BA3E9CEBA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73266BE7-B72B-49D1-BD7F-21BA3E9CEBA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73266BE7-B72B-49D1-BD7F-21BA3E9CEBA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73266BE7-B72B-49D1-BD7F-21BA3E9CEBA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
